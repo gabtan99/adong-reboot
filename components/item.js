@@ -12,7 +12,7 @@ const Item = ({ text, id }) => {
   return (
     <button
       onClick={playSound}
-      className="bg-card rounded text-primary py-2 font-bold hover:bg-primary hover:text-reverse"
+      className="bg-card rounded text-primary py-2 font-bold hover:bg-primary hover:text-reverse "
     >
       {text}
     </button>

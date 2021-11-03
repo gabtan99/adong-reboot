@@ -6,7 +6,7 @@ const Nav = () => {
       </h1>
       <div>
         <a href="https://drive.google.com/drive/folders/1NDwIjsTf785Uuiw2nKrYJh8yFoWzSZjj?usp=sharing">
-          <button className="text-reverse bg-accent py-2 px-4 rounded font-semibold text-xl font-raleway">
+          <button className="text-reverse bg-accent py-2 px-4 rounded font-semibold text-xl font-raleway transform motion-safe:hover:scale-110">
             Upload
           </button>
         </a>
