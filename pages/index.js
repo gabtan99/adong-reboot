@@ -15,7 +15,7 @@ export default function Home() {
         <Nav />
         <div className="pt-6 font-semibold text-primary">
           <p className="font-semibold text-primary pb-3"> Sounds</p>
-          <div class="grid xs:grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-3">
+          <div className="grid xs:grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-3">
             <Item text="clip" />
             <Item text="clip" />
             <Item text="clip" />
