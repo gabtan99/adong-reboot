@@ -1,11 +1,13 @@
+import debounce from "../components/debounce";
+
 const API_URL = "https://stormy-lake-97964.herokuapp.com/";
 
 const Item = ({ text, id }) => {
-  const playSound = async () => {
+  const playSound = debounce(async () => {
     const res = await fetch(API_URL + id);
     const data = await res.json();
     console.log(data);
-  };
+  }, 250);
 
   return (
     <button

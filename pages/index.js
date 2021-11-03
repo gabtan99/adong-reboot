@@ -30,19 +30,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <body>
-        <div className="container max-w-3xl mx-auto px-3">
-          <Nav />
-          <div className="pt-6 font-semibold text-primary">
-            <p className="font-bold text-primary pb-5 text-xl"> Sounds</p>
-            <div className="grid xs:grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-3">
-              {data.map((e) => (
-                <Item text={e.name} id={e.id} />
-              ))}
-            </div>
+      <div className="container max-w-3xl mx-auto px-3">
+        <Nav />
+        <div className="pt-6 font-semibold text-primary">
+          <p className="font-bold text-primary pb-5 text-xl"> Sounds</p>
+          <div className="grid xs:grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-3">
+            {data.map((e, i) => (
+              <Item key={i} text={e.name} id={e.id} />
+            ))}
           </div>
         </div>
-      </body>
+      </div>
     </>
   );
 }
