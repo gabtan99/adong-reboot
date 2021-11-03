@@ -5,9 +5,11 @@ const Nav = () => {
         AdongBot<span className="text-accent">2</span>
       </h1>
       <div>
-        <button className="text-reverse bg-accent py-2 px-4 rounded font-semibold text-xl font-raleway">
-          Upload
-        </button>
+        <a href="https://drive.google.com/drive/folders/1NDwIjsTf785Uuiw2nKrYJh8yFoWzSZjj?usp=sharing">
+          <button className="text-reverse bg-accent py-2 px-4 rounded font-semibold text-xl font-raleway">
+            Upload
+          </button>
+        </a>
       </div>
     </div>
   );
