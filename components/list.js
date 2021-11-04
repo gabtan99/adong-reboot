@@ -1,5 +1,6 @@
 import Item from "../components/item";
 import fetch from "isomorphic-unfetch";
+import Router from "next/router";
 import useSWR from "swr";
 
 const API_URL = "https://stormy-lake-97964.herokuapp.com/sounds";
@@ -11,9 +12,18 @@ async function fetcher(url) {
 }
 
 const List = () => {
-  const { data, error } = useSWR(API_URL, fetcher);
+  const { data, error } = useSWR(API_URL, fetcher, {
+    shouldRetryOnError: true,
+  });
 
-  if (error) return <div className="text-primary">failed to load</div>;
+  if (error)
+    return (
+      <div className=" mx-auto flex justify-center ">
+        <button className="px-5 py-2 bg-primary text-reverse font-bold rounded hover:bg-accent text-xl">
+          Try Again
+        </button>
+      </div>
+    );
   if (!data)
     return (
       <div className="flex justify-center items-center my-20">
