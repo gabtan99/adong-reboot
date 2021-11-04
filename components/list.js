@@ -16,10 +16,17 @@ const List = () => {
     shouldRetryOnError: true,
   });
 
+  const refresh = () => {
+    Router.reload(window.location.pathname);
+  };
+
   if (error)
     return (
       <div className=" mx-auto flex justify-center ">
-        <button className="px-5 py-2 bg-primary text-reverse font-bold rounded hover:bg-accent text-xl">
+        <button
+          onClick={refresh}
+          className="px-5 py-2 bg-primary text-reverse font-bold rounded hover:bg-accent text-xl"
+        >
           Try Again
         </button>
       </div>
