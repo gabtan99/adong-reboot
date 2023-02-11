@@ -2,7 +2,7 @@ import debounce from "./debounce";
 import { useState } from "react";
 import { RefreshCw } from "./icons";
 
-const API_URL = "https://stormy-lake-97964.herokuapp.com/ref";
+const API_URL = "https://adong-api.onrender.com";
 
 const Nav = () => {
   const [processing, setProcessing] = useState(false);

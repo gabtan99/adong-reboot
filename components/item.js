@@ -1,6 +1,6 @@
 import debounce from "../components/debounce";
 
-const API_URL = "https://stormy-lake-97964.herokuapp.com/";
+const API_URL = "https://adong-api.onrender.com";
 
 const Item = ({ text, id }) => {
   const playSound = debounce(async () => {

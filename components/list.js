@@ -3,7 +3,7 @@ import fetch from "isomorphic-unfetch";
 import Router from "next/router";
 import useSWR from "swr";
 
-const API_URL = "https://stormy-lake-97964.herokuapp.com/sounds";
+const API_URL = "https://adong-api.onrender.com";
 
 async function fetcher(url) {
   const res = await fetch(url);
