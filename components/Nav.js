@@ -2,7 +2,7 @@ import debounce from "./debounce";
 import { useState } from "react";
 import { RefreshCw } from "./icons";
 
-const API_URL = "https://adong-api.onrender.com";
+const API_URL = "https://adong-api.onrender.com/ref";
 
 const Nav = () => {
   const [processing, setProcessing] = useState(false);

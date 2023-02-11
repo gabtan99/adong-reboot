@@ -3,7 +3,7 @@ import fetch from "isomorphic-unfetch";
 import Router from "next/router";
 import useSWR from "swr";
 
-const API_URL = "https://adong-api.onrender.com";
+const API_URL = "https://adong-api.onrender.com/sounds";
 
 async function fetcher(url) {
   const res = await fetch(url);
